@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>ResiComm Manager</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+	<!-- for header part -->
+  <div id="login" class="login">
+    <div class="section-header">
+      <h3>Login</h3>
+    </div>
+    <form class="login-form mt-5" action="resident_dashboard.html" method="post">
+    
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input class="form-control" type="email" placeholder="Enter email" name="email" required>
+    
+        <label for="password"><b>Password</b></label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
+    
+        <a class="submit" href="resident_dashboard.html" type="submit">Login</a>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      
+      <div class="d-flex fs-13 mt-1">
+        <a class="mr-1" href="forgot_password.html">Forgot password?</a> | 
+        <span class="ml-1">Not a member? <a href="register.html">Register</a></span>
+      </div>
+
+      <!-- <div class="mt-1">
+        
+      </div> -->
+    
+    </form>
+  </div>
+			
+	<!-- <script src="./index.js"></script> -->
+</body>
+</html>
