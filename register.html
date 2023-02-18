@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>ResiComm Manager</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header>
+		<div class="logosec">
+			<!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png" class="icn menuicn" id="menuicn" alt="menu-icon"> -->
+      <div class="logo">RESICOMM</div>
+		</div>
+		<div class="message">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./login.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+			<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icon" alt="">
+			<div class="dp">
+				<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png" class="dp_icon" alt="dp">
+			</div>
+		</div>
+	</header>
+
+
+  <div id="login" class="login main-container">
+    <form class="login-form mt-5" action="action_page.php" method="post">
+    
+      <div class="">
+        <label for="name"><b>Full Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input class="form-control" type="email" placeholder="Enter email" name="email" required>
+    
+        <label for="password"><b>Password</b></label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="dob"><b>Date of Birth</b></label>
+        <input class="form-control" type="date" placeholder="Enter date of birth" name="dob" required>
+
+        <!-- <div class="mt-1 mb-1">
+          <label for="cars">Select registration type:</label>
+          <select name="" id="login-type">
+            <option value="resident">Resident</option>
+            <option value="visitor">Visitor</option>
+            <option value="manager">manager</option>
+          </select>
+        </div> -->
+        <div class="mt-1 mb-1 d-flex">
+          <input type="radio" id="login-type" name="login_type" value="resident" checked>
+          <label for="resident" class="mr-1">Resident</label>
+          <input type="radio" id="visitor" name="login_type" value="visitor">
+          <label for="visitor" class="mr-1">Visitor</label>
+          <input type="radio" id="manager" name="login_type" value="manager">
+          <label for="manager">Manager</label>
+        </div>
+    
+        <a class="submit" href="login.html" type="submit">Register</a>
+        <div class="mt-1">
+          <span class="">Already a member? <a href="login.html">login</a></span>
+        </div>
+      </div>
+    </form>
+  </div>
+			
+	<!-- <script src="./index.js"></script> -->
+</body>
+</html>

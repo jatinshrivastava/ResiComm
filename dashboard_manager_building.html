@@ -8,13 +8,12 @@
 	<meta name="viewport"
 		content="width=device-width,
 				initial-scale=1.0">
-	<title>ResiComm Visitor</title>
+	<title>ResiComm Manager</title>
 	<link rel="stylesheet"
 		href="style.css">
-	<link rel="stylesheet"
-		href="./css/visitor.css">
-	<link rel="stylesheet"
-		href="responsive.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="custom.css">
+
 </head>
 
 <body>
@@ -31,9 +30,9 @@
           <li><a href="./login.html">Login/Signup</a></li>
         </ul>
       </nav>
-			<img src="images/manager/dashboard/notification.png" class="icon" alt="">
+			<img src="./images/manager/dashboard/notification.png" class="icon" alt="">
 			<div class="dp">
-				<img src="images/manager/dashboard/profile.png" class="dp_icon" alt="dp">
+				<img src="./images/manager/dashboard/profile.png" class="dp_icon" alt="dp">
 			</div>
 		</div>
 	</header>
@@ -61,6 +60,7 @@
 								</div>
 							</div>
 					</div>
+
 
 					<div class="nav-option option5">
 						<div class="dropdown">
@@ -149,117 +149,97 @@
 				</div>
 			</nav>
 		</div>
+
 		<div class="main">
 
-
-			<div class="visitor-box-container">
-
-				<div class=" box1">
-					<div class="text">
-						<!-- <h2 class="topic-heading">$250,000.00</h2> -->
-						<div class="logo">Hi Visitor</div>
-							<!-- <h2 class="topic">Total Income</h2> -->
-					</div>
-
-				</div>
-				<div class="box4">
-					<div class="text">
-						<a href="http://127.0.0.1:5500/visitor_create_request.html"><button class="request-visit-btn">Create a visit request</button></a>
-
-					</div>
-
+			<div class="search_bar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="search_button">
+				<img src=
+						"images/manager/dashboard/search.png"
+						class="icon search_icon"
+						alt="search-button">
 				</div>
 			</div>
 
-			<div class="report-container">
-				<div class="report-header">
-					<h1 class="recent-Articles">Visitation Requests</h1>
+			<div class="box-container">
+
+				<div class="box box3">
+					<div class="text">
+						<h2 class="topic_heading">3820</h2>
+						<h2 class="topic">Number of Residents</h2>
+					</div>
+
+				</div>
+
+				<div class="box box4">
+					<div class="text">
+						<h2 class="topic_heading">170</h2>
+						<h2 class="topic">Employees</h2>
+					</div>
+
+				</div>
+
+				
+			</div>
+
+			<div class="report_Container">
+				<div class="report_Header">
+					<h1 class="recent_Articles">Recent Reports</h1>
 					<button class="view">View All</button>
 				</div>
 
 				<div class="report-body">
-					<table style="width: 100%; text-align: center;">
-						<tr>
-							<th style="width:10%;">Request Id</th>
-							<th style="width:20%;">Building-Apartment Unit</th>
-							<th style="width:32%;">In-Time/Out-Time</th>
-							<th style="width:19%;">Status</th>
-							<th style="width:5%;"></th>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-approved">Approved</td>
-							<td>
-								<div class="visitor-schedule-action-container">
-								<a href="./visitor_driving_instructions.html"><img src="./images/map.png" height="24px" width="24px"></a>
-								<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-requested">Requested</td>
-							<td>
-								<div class= "visitor-schedule-action-container">
-									<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-									</div>
-							</td>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-requested">Requested</td>
-							<td>
-								<div class= "visitor-schedule-action-container">
-									<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-									</div>
-							</td>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-declined">Declined</td>
-							<td>
-								<div class= "visitor-schedule-action-container">
-									<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-									</div>
-							</td>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-approved">Approved</td>
-							<td>
-								<div class= "visitor-schedule-action-container">
-									<a href="./visitor_driving_instructions.html"><img src="./images/map.png" height="24px" width="24px"></a>
-									<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-									</div>
-							</td>
-						</tr>
-						<tr>
-							<td>73</td>
-							<td>5-210</td>
-							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
-							<td class="visitor-table-request-declined">Declined</td>
-							<td>
-								<div class= "visitor-schedule-action-container">
-									<a><img src="./images/more_vert.png" height="24px" width="24px"></a>
-									</div>
-							</td>
-						</tr>
-					</table>
+					<div class="report_topic_heading">
+						<h3 class="t-op">Reports</h3>
+						<h3 class="t-op">Resident</h3>
+						<h3 class="t-op">Date</h3>
+						
+					</div>
+
+					<div class="items">
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Report_1</h3>
+							<h3 class="t-op-nextlvl">Resident_1</h3>
+							<h3 class="t-op-nextlvl">Date_1</h3>
+							
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Report_2</h3>
+							<h3 class="t-op-nextlvl">Resident_2</h3>
+							<h3 class="t-op-nextlvl">Date_2</h3>
+						</div>
+
+						<div class="item1">
+							<h3 class="t-op-nextlvl">Report_3</h3>
+							<h3 class="t-op-nextlvl">Resident_3</h3>
+							<h3 class="t-op-nextlvl">Date_3</h3>
+						</div>
+
+
+					</div>
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- <script src="./index.js"></script> -->
+	<div id="chat" class="chat">
+		<div class="chat-header">
+			Chatbot
+		</div>
+		<div class="chat-content">
+			Hey there
+		</div>
+		<div class="chat-input d-flex">
+			<input placeholder="Start chat..."./>
+			<button>Send</button>
+		</div>
+	</div>
+
 </body>
 </html>

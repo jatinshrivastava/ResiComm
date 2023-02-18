@@ -12,7 +12,7 @@
 	<link rel="stylesheet"
 		href="style.css">
 	<link rel="stylesheet"
-		href="/css/visitor.css">
+		href="./css/visitor.css">
 	<link rel="stylesheet"
 		href="responsive.css">
 </head>
@@ -20,122 +20,138 @@
 <body>
 
 	<!-- for header part -->
-	<header>
-
+    <header>
 		<div class="logosec">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
-				class="icn menuicn"
-				id="menuicn"
-				alt="menu-icon">
-            <div class="logo">Visitor</div>
-
+      <div class="logo">RESICOMM</div>
 		</div>
-
-		<div class="searchbar">
-			<input type="text"
-				placeholder="Search">
-			<div class="searchbtn">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-					class="icn srchicn"
-					alt="search-icon">
-			</div>
-		</div>
-
 		<div class="message">
-			<div class="circle"></div>
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
-				class="icn"
-				alt="">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./login.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+			<img src="images/manager/dashboard/notification.png" class="icon" alt="">
 			<div class="dp">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
-					class="dpicn"
-					alt="dp">
+				<img src="images/manager/dashboard/profile.png" class="dp_icon" alt="dp">
 			</div>
 		</div>
-
 	</header>
+
+	<div class="dropdown-nav">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-nav-content">
+			<a href="#">Dashboard</a>
+			<a href="#">Profile</a>
+			<a href="#">Settings</a>
+		</div>
+	</div>
 
 	<div class="main-container">
 		<div class="navcontainer">
 			<nav class="nav">
 				<div class="nav-upper-options">
-					<div class="nav-option option1">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
-							class="nav-img"
-							alt="dashboard">
-						<h3> Dashboard</h3>
-					</div>
 
-					<!-- <div class="option2 nav-option">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
-							class="nav-img"
-							alt="articles">
-						<h3> Articles</h3>
-					</div> -->
+					<div class="nav-option option5">
+							<div class="dropdown">
+								<button class="dropbtn">Resident</button>
+								<div class="dropdown-content">
+									<a href="resident_dashboard.html">Dashboard</a>
+									<a href="user_vehicle_list.html">Vehicle Registration</a>
 
-					<!-- <div class="nav-option option3">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
-							class="nav-img"
-							alt="report">
-						<h3> Report</h3>
-					</div> -->
-
-					<div class="nav-option option4">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
-							class="nav-img"
-							alt="institution">
-						<h3> Home</h3>
+									<!-- <a href="#">Home</a> -->
+								</div>
+							</div>
 					</div>
 
 					<div class="nav-option option5">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
-							class="nav-img"
-							alt="blog">
-						<h3> Profile</h3>
+						<div class="dropdown">
+							<button class="dropbtn">Visitor</button>
+							<div class="dropdown-content">
+								<a href="visitor_dashboard.html">Dashboard</a>
+
+								<!-- <a href="#">Home</a> -->
+							</div>
+						</div>
 					</div>
 
-					<div class="nav-option option6">
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Pool Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_pool.html">Dashboard</a>
+								<a href="home_manager_pool.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Garden Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_garden.html">Dashboard</a>
+								<a href="home_manager_garden.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Building Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_building.html">Dashboard</a>
+								<a href="home_manager_building.html">Home</a>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Security Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_security.html">Dashboard</a>
+								<a href="home_manager_security.html">Home</a>
+							</div>
+						</div>
+					</div>
+				
+
+					<!-- <div class="nav-option option4">
 						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
-							class="nav-img"
+							"images/manager/dashboard/home.png"
+							class="nav_image"
+							alt="institution">
+						<h3> Home</h3>
+					</div> -->
+
+					<div class="nav-option option5">
+						<a class="dropbtn text-center" href="user_profile.html">Profile</a>
+					</div>
+
+					<div class="nav-option option5">
+						<a href="login.html" class="dropbtn text-center">Logout</a>
+					</div>
+
+					<!-- <div class="nav-option option6">
+						<img src=
+							"images/manager/dashboard/settings.png"
+							class="nav_image"
 							alt="settings">
 						<h3> Settings</h3>
-					</div>
+					</div> -->
 
-					<div class="nav-option logout">
+					<!-- <div class="nav-option logout">
 						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
-							class="nav-img"
+							"images/manager/dashboard/logout.png"
+							class="nav_image"
 							alt="logout">
 						<h3>Logout</h3>
-					</div>
+					</div> -->
 
 				</div>
 			</nav>
 		</div>
 		<div class="main">
-
-			<div class="searchbar2">
-				<input type="text"
-					name=""
-					id=""
-					placeholder="Search">
-				<div class="searchbtn">
-				<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-						class="icn srchicn"
-						alt="search-button">
-				</div>
-			</div>
 
 			<div class="visitor-box-container">
 
@@ -161,7 +177,7 @@
                         <div class="d-flex">
                             <div class="d-inline d-relative">
                                 <input type="radio" name="register-vehicle-radio" value="a" class="register-vehicle-radio"  checked>
-                                <img src="/images/category-a.png" class="register-vehicle-radio-image" alt="Option 1">
+                                <img src="./images/category-a.png" class="register-vehicle-radio-image" alt="Option 1">
                         </div>
                         &nbsp;
                         &nbsp;
@@ -169,7 +185,7 @@
                         &nbsp;
                         <div class="d-inline d-relative"> 
                             <input type="radio" name="register-vehicle-radio" value="b" class="register-vehicle-radio">
-                            <img src="/images/category-b.png" class="register-vehicle-radio-image" alt="Option 2">
+                            <img src="./images/category-b.png" class="register-vehicle-radio-image" alt="Option 2">
                         </div>
                         &nbsp;
                         &nbsp;
@@ -177,7 +193,7 @@
                         &nbsp;
                         <div class="d-inline d-relative"> 
                             <input type="radio" name="register-vehicle-radio" value="c" class="register-vehicle-radio">
-                            <img src="/images/category-c.png" class="register-vehicle-radio-image" alt="Option 3">
+                            <img src="./images/category-c.png" class="register-vehicle-radio-image" alt="Option 3">
                         </div>
                         </div>
 
@@ -185,7 +201,7 @@
                         <div class="d-flex">
                         <div class="d-inline d-relative"> 
                             <input type="radio" name="register-vehicle-radio" value="d" class="register-vehicle-radio">
-                            <img src="/images/category-d.png" class="register-vehicle-radio-image" alt="Option 4">
+                            <img src="./images/category-d.png" class="register-vehicle-radio-image" alt="Option 4">
                         </div>
                         &nbsp;
                         &nbsp;
@@ -193,7 +209,7 @@
                         &nbsp;
                         <div class="d-inline d-relative"> 
                             <input type="radio" name="register-vehicle-radio" value="e" class="register-vehicle-radio">
-                            <img src="/images/category-t.png" class="register-vehicle-radio-image" alt="Option 5">
+                            <img src="./images/category-t.png" class="register-vehicle-radio-image" alt="Option 5">
                         </div>
                         &nbsp;
                         &nbsp;
@@ -201,7 +217,7 @@
                         &nbsp;
                         <div class="d-inline d-relative"> 
                             <input type="radio" name="register-vehicle-radio" value="o" class="register-vehicle-radio">
-                            <img src="/images/other.png" class="register-vehicle-radio-image" alt="Option 6">
+                            <img src="./images/other.png" class="register-vehicle-radio-image" alt="Option 6">
                         </div>
                        </div>
                        <br>
@@ -224,7 +240,7 @@
                     </div>
                    <br>
                    <br>
-                        <a href="/visitor_create_request.html"><button type="submit" class="btn-primary" value="Submit">Submit</button></a>
+                        <a href="./visitor_create_request.html"><button type="submit" class="btn-primary" value="Submit">Submit</button></a>
                       </form>
 				</div>
 			</div>
