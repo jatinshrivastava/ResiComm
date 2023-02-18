@@ -26,7 +26,7 @@
 				class="icn menuicn"
 				id="menuicn"
 				alt="menu-icon">
-            <div class="logo">Admin</div>
+            <div class="logo">Visitor</div>
 
 		</div>
 
@@ -135,36 +135,20 @@
 				</div>
 			</div>
 
-			<div class="box-container">
+			<div class="visitor-box-container">
 
-				<div class="box box1">
+				<div class=" box1">
 					<div class="text">
-						<h2 class="topic-heading">$250,000.00</h2>
-						<h2 class="topic">Total Income</h2>
+						<!-- <h2 class="topic-heading">$250,000.00</h2> -->
+						<div class="logo">Hi Visitor</div>
+							<!-- <h2 class="topic">Total Income</h2> -->
 					</div>
 
 				</div>
-
-				<div class="box box2">
+				<div class="box4">
 					<div class="text">
-						<h2 class="topic-heading">36.2%</h2>
-						<h2 class="topic">Inquiry Success Rate</h2>
-					</div>
+						<a href="http://127.0.0.1:5500/visitor_create_request.html"><button class="request-visit-btn">Create a visit request</button></a>
 
-				</div>
-
-				<div class="box box3">
-					<div class="text">
-						<h2 class="topic-heading">3820</h2>
-						<h2 class="topic">Number of Residents</h2>
-					</div>
-
-				</div>
-
-				<div class="box box4">
-					<div class="text">
-						<h2 class="topic-heading">170</h2>
-						<h2 class="topic">Employees</h2>
 					</div>
 
 				</div>
@@ -172,42 +156,88 @@
 
 			<div class="report-container">
 				<div class="report-header">
-					<h1 class="recent-Articles">Recent Enquiries</h1>
+					<h1 class="recent-Articles">Visitation Requests</h1>
 					<button class="view">View All</button>
 				</div>
 
 				<div class="report-body">
-					<div class="report-topic-heading">
-						<h3 class="t-op">Enquiries</h3>
-						<h3 class="t-op">Building</h3>
-						<h3 class="t-op">Apartment Unit</h3>
-						<h3 class="t-op">Status</h3>
-					</div>
-
-					<div class="items">
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 73</h3>
-							<h3 class="t-op-nextlvl">5</h3>
-							<h3 class="t-op-nextlvl">210</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 72</h3>
-							<h3 class="t-op-nextlvl">11</h3>
-							<h3 class="t-op-nextlvl">360</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 71</h3>
-							<h3 class="t-op-nextlvl">7</h3>
-							<h3 class="t-op-nextlvl">150</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-
-					</div>
+					<table style="width: 100%; text-align: center;">
+						<tr>
+							<th style="width:10%;">Request Id</th>
+							<th style="width:20%;">Building-Apartment Unit</th>
+							<th style="width:32%;">In-Time/Out-Time</th>
+							<th style="width:19%;">Status</th>
+							<th style="width:5%;"></th>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-approved">Approved</td>
+							<td>
+								<div class="visitor-schedule-action-container">
+								<a href="/visitor_driving_instructions.html"><img src="/images/map.png" height="24px" width="24px"></a>
+								<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-requested">Requested</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-requested">Requested</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-declined">Declined</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-approved">Approved</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/map.png" height="24px" width="24px"></a>
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>5-210</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-declined">Declined</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>

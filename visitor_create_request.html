@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>ResiComm Visitor</title>
+	<link rel="stylesheet"
+		href="style.css">
+	<link rel="stylesheet"
+		href="responsive.css">
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+
+		<div class="logosec">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon">
+            <div class="logo">Visitor</div>
+
+		</div>
+
+		<div class="searchbar">
+			<input type="text"
+				placeholder="Search">
+			<div class="searchbtn">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+					class="icn srchicn"
+					alt="search-icon">
+			</div>
+		</div>
+
+		<div class="message">
+			<div class="circle"></div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+				class="icn"
+				alt="">
+			<div class="dp">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+					class="dpicn"
+					alt="dp">
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<div class="nav-option option1">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+							class="nav-img"
+							alt="dashboard">
+						<h3> Dashboard</h3>
+					</div>
+
+					<!-- <div class="option2 nav-option">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles">
+						<h3> Articles</h3>
+					</div> -->
+
+					<!-- <div class="nav-option option3">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+							class="nav-img"
+							alt="report">
+						<h3> Report</h3>
+					</div> -->
+
+					<div class="nav-option option4">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+							class="nav-img"
+							alt="institution">
+						<h3> Home</h3>
+					</div>
+
+					<div class="nav-option option5">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+							class="nav-img"
+							alt="blog">
+						<h3> Profile</h3>
+					</div>
+
+					<div class="nav-option option6">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+							class="nav-img"
+							alt="settings">
+						<h3> Settings</h3>
+					</div>
+
+					<div class="nav-option logout">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout">
+						<h3>Logout</h3>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="searchbar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="searchbtn">
+				<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+						class="icn srchicn"
+						alt="search-button">
+				</div>
+			</div>
+
+			<div class="visitor-box-container">
+
+				<div class=" box1">
+					<div class="text">
+						<!-- <h2 class="topic-heading">$250,000.00</h2> -->
+						<div class="logo">Hi Visitor</div>
+							<!-- <h2 class="topic">Total Income</h2> -->
+					</div>
+
+				</div>
+			</div>
+
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Create a Visit Request</h1>
+				</div>
+
+				<div class="report-body">
+					<form>
+                        <div class="d-flex">
+                            <div class="d-inline">
+                            <label for="apartment_number">Apartment Number:</label>
+                        <input type="text" id="apartment_number" name="apartment_number">
+                        </div>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                       <div class="d-inline"> 
+                        <label for="building_number">Building Number:</label>
+                        <input type="building_number" id="building_number" name="building_number">
+                       </div>
+                       </div>
+                       <br>
+                        <label for="vehicle_radio">Will you be coming with a vehicle?:</label><br>
+                        <div class="d-flex">
+                        <input type="radio" id="vehicle_radio_no" name="vehicle_radio" value="no">
+                        &nbsp;
+                        <label for="male">No</label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" id="vehicle_radio_yes" name="vehicle_radio" value="yes">
+                        &nbsp;
+                        <label for="female">Yes</label><br>
+                        </div>                
+                        <br>
+                        <label for="vehicle_number">Select your vehicle:</label>
+                        <select id="vehicle_number" name="vehicle_number">
+                            <option value="">Select vehicle</option>
+                            <option value="number1">Hyundai Elantra / LHD-8488</option>
+                            <option value="number2">Nissan Turano / CBH-3536</option>
+                            <option value="number3">Ford Fusion / MBD-1254</option>
+                          </select><br>
+                        <p style="font-size:14px;">Vehicle not added?<a href="/visitor_register_vehicle.html">Add here!</a></p>
+                        <br>
+                        <div class="d-flex">
+                            <div class="d-inline">
+                                <label for="in-time">In-Time:</label>
+                        <input type="text" id="in-time" name="in-time">
+                            </div>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <div class="d-inline">
+                            <label for="out-time">Out-Time:</label>
+                        <input type="text" id="out-time" name="out-time">
+                        </div>
+                        </div>
+                       <br>
+                       <p><label for="visit-reason">Reason for visit:</label></p>
+  <textarea id="visit-reason" name="visit-reason" rows="6" cols="96"></textarea>
+  <br>
+  <br>
+                        <button type="submit" class="btn-primary" value="Submit">Submit</button>
+                      </form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="./index.js"></script> -->
+</body>
+</html>
