@@ -69,8 +69,8 @@
     }
     
     @media screen and (max-width: 490px) {
-    .message {
-        display: none;
+    .message ul li a{
+        font-size: 15px;
     }
     .logosec {
         width: 100%;
