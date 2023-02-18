@@ -256,6 +256,10 @@ header {
   font-size: 30px;
   letter-spacing: 3px;
 }
+.topic-heading-md {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
 
 .report-container {
   min-height: 300px;
@@ -291,41 +295,6 @@ header {
   font-size: 15px;
   border: none;
   cursor: pointer;
-}
-.d-flex {
-  display: flex;
-}
-.d-block {
-  display: block;
-}
-.d-inline-block {
-  display: inline-block;
-}
-.d-inline {
-  display: inline;
-}
-.request-visit-btn {
-  height: 35px;
-  /* width: 190px; */
-  padding-inline: 16px;
-  border-radius: 8px;
-  background-color: #5500cb;
-  color: white;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.visitor-table-request-approved {
-  background-color: green;
-  border-radius: 8px;
-}
-.visitor-table-request-requested {
-  background-color: orange;
-  border-radius: 8px;
-}
-.visitor-table-request-declined {
-  background-color: red;
-  border-radius: 8px;
 }
 .report-body {
   max-width: 1160px;

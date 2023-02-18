@@ -12,6 +12,8 @@
 	<link rel="stylesheet"
 		href="style.css">
 	<link rel="stylesheet"
+		href="/css/visitor.css">
+	<link rel="stylesheet"
 		href="responsive.css">
 </head>
 
@@ -69,22 +71,6 @@
 						<h3> Dashboard</h3>
 					</div>
 
-					<!-- <div class="option2 nav-option">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
-							class="nav-img"
-							alt="articles">
-						<h3> Articles</h3>
-					</div> -->
-
-					<!-- <div class="nav-option option3">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
-							class="nav-img"
-							alt="report">
-						<h3> Report</h3>
-					</div> -->
-
 					<div class="nav-option option4">
 						<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
@@ -135,36 +121,50 @@
 				</div>
 			</div>
 
+			<!-- <div class="resident-dashboard-container-top d-flex">
+				<div class="d-inline">
+				<img class="resident-dashboard-image" src="/images/resident_dashboard_image.jpg" >
+			</div>
+			<div class="d-inline d-absolute">
+				<h1>Tower D</h1>
+				<h1>Tower D</h1>
+				<h1>Tower D</h1>
+				<h1>Tower D</h1>
+			</div>
+			</div>
+			<br>
+			<br> -->
 			<div class="box-container">
 
 				<div class="box box1">
 					<div class="text">
-						<h2 class="topic-heading">$250,000.00</h2>
-						<h2 class="topic">Total Income</h2>
+						<h2 class="topic-heading">Garden</h2>
+						<h2 class="topic">7:00 AM - 5:00 PM</h2>
 					</div>
 
 				</div>
 
 				<div class="box box2">
 					<div class="text">
-						<h2 class="topic-heading">36.2%</h2>
-						<h2 class="topic">Inquiry Success Rate</h2>
+						<h2 class="topic-heading">Pool</h2>
+						<h2 class="topic">8:00 AM - 8:00 PM</h2>
 					</div>
 
 				</div>
 
 				<div class="box box3">
 					<div class="text">
-						<h2 class="topic-heading">3820</h2>
-						<h2 class="topic">Number of Residents</h2>
+						<h2 class="topic-heading-md">Tennis Court</h2>
+						<h2 class="topic">6:00 AM - 12:00 PM (Mor.)</h2>
+						<h2 class="topic">4:00 PM - 10:00 PM (Eve.)</h2>
 					</div>
 
 				</div>
 
 				<div class="box box4">
 					<div class="text">
-						<h2 class="topic-heading">170</h2>
-						<h2 class="topic">Employees</h2>
+						<h2 class="topic-heading">Gym</h2>
+						<h2 class="topic">5:00 AM - 12:00 AM</h2>
 					</div>
 
 				</div>
@@ -172,47 +172,235 @@
 
 			<div class="report-container">
 				<div class="report-header">
-					<h1 class="recent-Articles">Recent Enquiries</h1>
+					<h1 class="recent-Articles">Visitor Requests</h1>
 					<button class="view">View All</button>
 				</div>
 
 				<div class="report-body">
-					<div class="report-topic-heading">
-						<h3 class="t-op">Enquiries</h3>
-						<h3 class="t-op">Building</h3>
-						<h3 class="t-op">Apartment Unit</h3>
-						<h3 class="t-op">Status</h3>
+					<table style="width: 100%; text-align: center;">
+						<tr>
+							<th style="width:10%;">Visitor Name</th>
+							<th style="width:20%;">Reason</th>
+							<th style="width:32%;">In-Time/Out-Time</th>
+							<th style="width:19%;">Status</th>
+							<th style="width:5%;"></th>
+						</tr>
+						<tr>
+							<td>John Doe</td>
+							<td>Electricity</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-visited">Visited</td>
+							<td>
+								<div class="visitor-schedule-action-container">
+								<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Sam Smith</td>
+							<td>Plumbing</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-entered">Entered</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Victor Dean</td>
+							<td>Guest</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-requested">Requested</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Lisa Harris</td>
+							<td>Guest</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-declined">Declined</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Peter Spencer</td>
+							<td>Housekeeping</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-approved">Approved</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Daniel Geroge</td>
+							<td>Delivery</td>
+							<td>Feb 21, 2023 12:30 PM / Feb 21, 2023 12:30 PM</td>
+							<td class="visitor-table-request-declined">Declined</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="d-flex">
+			<div class="container d-inline">
+				<div class="report-container">
+					<div class="report-header">
+						<h1 class="recent-Articles">Service Requests</h1>
+						<button class="view">View All</button>
 					</div>
-
-					<div class="items">
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 73</h3>
-							<h3 class="t-op-nextlvl">5</h3>
-							<h3 class="t-op-nextlvl">210</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 72</h3>
-							<h3 class="t-op-nextlvl">11</h3>
-							<h3 class="t-op-nextlvl">360</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-						<div class="item1">
-							<h3 class="t-op-nextlvl">Enquiry 71</h3>
-							<h3 class="t-op-nextlvl">7</h3>
-							<h3 class="t-op-nextlvl">150</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Completed</h3>
-						</div>
-
-
+	
+					<div class="report-body">
+						<table style="width: 100%; text-align: center;">
+							<tr>
+								<th style="width:25%;">Request Id</th>
+								<th style="width:35%;">Type</th>
+								<th style="width:35%;">Status</th>
+								<th style="width:5%;"></th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Electricity</td>
+								<td class="visitor-table-request-visited">In-Progress</td>
+								<td>
+									<div class="visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Plumbing</td>
+								<td class="visitor-table-request-visited">In-Progress</td>
+								<td>
+									<div class= "visitor-schedule-action-container">
+										<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+										</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Guest</td>
+								<td class="visitor-table-request-requested">Requested</td>
+								<td>
+									<div class= "visitor-schedule-action-container">
+										<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+										</div>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Guest</td>
+								<td class="visitor-table-request-requested">Requested</td>
+								<td>
+									<div class= "visitor-schedule-action-container">
+										<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+										</div>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Housekeeping</td>
+								<td class="visitor-table-request-approved">Completed</td>
+								<td>
+									<div class= "visitor-schedule-action-container">
+										<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+										</div>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Delivery</td>
+								<td class="visitor-table-request-approved">Completed</td>
+								<td>
+									<div class= "visitor-schedule-action-container">
+										<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+										</div>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
+
+			<div class="container d-inline">
+				<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Memberships</h1>
+				</div>
+
+				<div class="report-body">
+					<table style="width: 100%; text-align: center;">
+						<tr>
+							<th style="width:10%;">Sr. No.</th>
+							<th style="width:15%;">Membership Name</th>
+							<th style="width:35%;">Issued On</th>
+							<th style="width:35%;">Expires On</th>
+							<th style="width:5%;"></th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Gym</td>
+							<td>Feb 21, 2023</td>
+							<td>Feb 21, 2023</td>
+							<td>
+								<div class="visitor-schedule-action-container">
+								<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Pool</td>
+							<td>Feb 21, 2023</td>
+							<td>Feb 21, 2023</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Tennis Court</td>
+							<td>Feb 21, 2023</td>
+							<td>Feb 21, 2023</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Badminton</td>
+							<td>Feb 21, 2023</td>
+							<td>Feb 21, 2023</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a><img src="/images/more_vert.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+			</div>
 		</div>
 	</div>
-
-	<!-- <script src="./index.js"></script> -->
 </body>
 </html>

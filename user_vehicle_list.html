@@ -28,7 +28,7 @@
 				class="icn menuicn"
 				id="menuicn"
 				alt="menu-icon">
-            <div class="logo">Visitor</div>
+            <div class="logo">RESICOMM</div>
 
 		</div>
 
@@ -49,11 +49,12 @@
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
 				class="icn"
 				alt="">
-			<div class="dp">
+			<div class="dp"><a href="/user_profile.html">
 			<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
 					class="dpicn"
 					alt="dp">
+					</a>
 			</div>
 		</div>
 
@@ -142,8 +143,15 @@
 				<div class=" box1">
 					<div class="text">
 						<!-- <h2 class="topic-heading">$250,000.00</h2> -->
-						<div class="logo">Hi Visitor</div>
+						<div class="logo">Hi User</div>
 							<!-- <h2 class="topic">Total Income</h2> -->
+					</div>
+
+				</div>
+				<div class="box4">
+					<div class="text">
+						<a href="http://127.0.0.1:5500/visitor_register_vehicle.html"><button class="request-visit-btn">Register a vehicle</button></a>
+
 					</div>
 
 				</div>
@@ -151,70 +159,92 @@
 
 			<div class="report-container">
 				<div class="report-header">
-					<h1 class="recent-Articles">Create a Visit Request</h1>
+					<h1 class="recent-Articles">Registered Vehicles</h1>
+					<button class="view">View All</button>
 				</div>
 
 				<div class="report-body">
-					<form>
-                        <div class="d-flex">
-                            <div class="d-inline">
-                            <label for="apartment_number">Apartment Number:</label>
-                        <input type="text" id="apartment_number" name="apartment_number">
-                        </div>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                       <div class="d-inline"> 
-                        <label for="building_number">Building Number:</label>
-                        <input type="building_number" id="building_number" name="building_number">
-                       </div>
-                       </div>
-                       <br>
-                        <label for="vehicle_radio">Will you be coming with a vehicle?:</label><br>
-                        <div class="d-flex">
-                        <input type="radio" id="vehicle_radio_no" name="vehicle_radio" value="no">
-                        &nbsp;
-                        <label for="male">No</label>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <input type="radio" id="vehicle_radio_yes" name="vehicle_radio" value="yes">
-                        &nbsp;
-                        <label for="female">Yes</label><br>
-                        </div>                
-                        <br>
-                        <label for="vehicle_number">Select your vehicle:</label>
-                        <select id="vehicle_number" name="vehicle_number">
-                            <option value="">Select vehicle</option>
-                            <option value="number1">Hyundai Elantra / LHD-8488</option>
-                            <option value="number2">Nissan Turano / CBH-3536</option>
-                            <option value="number3">Ford Fusion / MBD-1254</option>
-                          </select><br>
-                        <p style="font-size:14px;">Vehicle not added?<a href="/visitor_register_vehicle.html">Add here!</a></p>
-                        <br>
-                        <div class="d-flex">
-                            <div class="d-inline">
-                                <label for="in-time">In-Time:</label>
-                        <input type="text" id="in-time" name="in-time">
-                            </div>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <div class="d-inline">
-                            <label for="out-time">Out-Time:</label>
-                        <input type="text" id="out-time" name="out-time">
-                        </div>
-                        </div>
-                       <br>
-                       <p><label for="visit-reason">Reason for visit:</label></p>
-  <textarea id="visit-reason" name="visit-reason" rows="6" cols="96"></textarea>
-  <br>
-  <br>
-                        <button type="submit" class="btn-primary" value="Submit">Submit</button>
-                      </form>
+					<table style="width: 100%; text-align: center;">
+						<tr>
+							<th style="width:10%;">S. No.</th>
+							<th style="width:20%;">Vehicle Plate Number</th>
+							<th style="width:32%;">Vehicle Make</th>
+							<th style="width:19%;">Vehicle Model</th>
+							<th style="width:5%;"></th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>AV5-210</td>
+							<td>Hyundai</td>
+							<td>Elantra</td>
+							<td>
+								<div class="visitor-schedule-action-container">
+								<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+								<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>AS5-210</td>
+							<td>Ford</td>
+							<td>Fusion</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+									<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>BC5-210</td>
+							<td>Honda</td>
+							<td>Civic</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+									<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>EG5-210</td>
+							<td>Ford</td>
+							<td>Fiesta</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+									<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>RD5-210</td>
+							<td>Kia</td>
+							<td>Forte</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+									<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>ND5-210</td>
+							<td>Acura</td>
+							<td>TLX</td>
+							<td>
+								<div class= "visitor-schedule-action-container">
+									<a href="/visitor_driving_instructions.html"><img src="/images/edit_square.png" height="24px" width="24px"></a>
+									<a><img src="/images/delete_fill.png" height="24px" width="24px"></a>
+									</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
