@@ -4,28 +4,26 @@ Sing, Karanjot - 1001949016
 Gampa, Sai Gayathri - 1002090414
  Kumar, Harihar Omkarachari Suprith - 1001880333
  */
+ /* Main CSS Here */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  -sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
-
-body {
-  min-height: 1000px;
 }
 :root {
   --background-color1: #fafaff;
   --background-color2: #ffffff;
   --background-color3: #ededed;
-  --background-color4: #ffffff;
-  --primary-color: #6bc8b8;
-  --secondary-color: #6bc8b8;
-  --Border-color: #6bc8b8;
-  --one-use-color: #6bc8b8;
-  --two-use-color: #6bc8b8;
+  --background-color4: #cad7fda4;
+  --primary-color: #4b49ac;
+  --secondary-color: #0c007d;
+  --Border-color: #3f0097;
+  --one-use-color: #3f0097;
+  --two-use-color: #5500cb;
 }
 body {
   background-color: var(--background-color4);
@@ -35,70 +33,47 @@ body {
 
 header {
   height: 70px;
-  width: 100%;
+  width: 100vw;
+  padding: 0 30px;
   background-color: var(--background-color1);
   position: fixed;
   z-index: 100;
   box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
   display: flex;
-  top: 0;
-  left: 0;
-  padding-right: 20px;
   justify-content: space-between;
   align-items: center;
-}
-
-header .logo {
-  padding-left: 20px;
-}
-
-header ul li a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav li {
-  margin: 0 20px;
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 600;
   color: rgb(47, 141, 70);
 }
 
-.icon {
+.icn {
   height: 30px;
 }
-.menu_icon {
+.menuicn {
   cursor: pointer;
 }
 
-.search_bar,
+.searchbar,
 .message,
-.logo_section {
+.logosec {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search_bar2 {
+.searchbar2 {
   display: none;
 }
 
-.logo_section {
+.logosec {
   gap: 60px;
 }
 
-.search_bar {
+.searchbar input {
   width: 250px;
   height: 42px;
   border-radius: 50px 0 0 50px;
@@ -108,7 +83,7 @@ header nav li {
   outline: none;
   border: none;
 }
-.search_button {
+.searchbtn {
   width: 50px;
   height: 42px;
   display: flex;
@@ -121,7 +96,6 @@ header nav li {
 
 .message {
   gap: 40px;
-  padding-right: 20px;
   position: relative;
   cursor: pointer;
 }
@@ -151,7 +125,7 @@ header nav li {
   top: 70px;
   z-index: 1;
 }
-.dp_icon {
+.dpicn {
   height: 42px;
 }
 
@@ -173,19 +147,17 @@ header nav li {
   background-color: #9e9e9eb2;
 }
 
-.box-container,
-.button-container {
+.box-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
-  padding-top: 5%;
+  gap: 50px;
 }
 .nav {
   min-height: 91vh;
   width: 250px;
-  background-color: #a8abab;
+  background-color: var(--background-color2);
   position: absolute;
   top: 0px;
   left: 00;
@@ -194,11 +166,11 @@ header nav li {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  /* padding: 30px 0 20px 10px; */
+  padding: 30px 0 20px 10px;
 }
 .navcontainer {
   height: calc(100vh - 70px);
-  width: 350px;
+  width: 250px;
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -224,7 +196,7 @@ header nav li {
   background-color: #dadada;
   cursor: pointer;
 }
-.nav_image {
+.nav-img {
   height: 30px;
 }
 
@@ -237,7 +209,7 @@ header nav li {
 
 .option1 {
   border-left: 5px solid #010058af;
-  background-color: #6bc8b8;
+  background-color: var(--Border-color);
   color: white;
   cursor: pointer;
 }
@@ -257,61 +229,6 @@ header nav li {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-
-.button {
-  height: 80px;
-  width: 180px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.button:nth-child(1) {
-  background-color: var(--one-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-.button:nth-child(2) {
-  background-color: var(--two-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-.button:nth-child(3) {
-  background-color: var(--two-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-.button:nth-child(4) {
-  background-color: var(--two-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-.button:nth-child(5) {
-  background-color: var(--two-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-.button:nth-child(6) {
-  background-color: var(--two-use-color);
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.button:hover {
-  transform: scale(1.08);
-}
-
 .box:hover {
   transform: scale(1.08);
 }
@@ -323,6 +240,9 @@ header nav li {
   background-color: var(--two-use-color);
 }
 .box:nth-child(3) {
+  background-color: var(--one-use-color);
+}
+.box:nth-child(4) {
   background-color: var(--two-use-color);
 }
 
@@ -338,23 +258,27 @@ header nav li {
   letter-spacing: 1px;
 }
 
-.topic_heading {
+.topic-heading {
   font-size: 30px;
   letter-spacing: 3px;
 }
+.topic-heading-md {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
 
-.report_Container {
+.report-container {
   min-height: 300px;
   max-width: 1200px;
-  margin: 50px auto 0px auto;
+  margin: 70px auto 0px auto;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 3px 3px 10px rgb(188, 188, 188);
   padding: 0px 20px 20px 20px;
 }
-.report_Header {
+.report-header {
   height: 80px;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -362,31 +286,30 @@ header nav li {
   border-bottom: 2px solid rgba(0, 20, 151, 0.59);
 }
 
-.recent_Articles {
+.recent-Articles {
   font-size: 30px;
   font-weight: 600;
-  color: #6bc8b8;
+  color: #5500cb;
 }
 
 .view {
   height: 35px;
   width: 90px;
   border-radius: 8px;
-  background-color: #6bc8b8;
+  background-color: #5500cb;
   color: white;
   font-size: 15px;
   border: none;
   cursor: pointer;
 }
-
 .report-body {
-  max-width: 1200px;
+  max-width: 1160px;
   overflow-x: auto;
   padding: 20px;
 }
-.report_topic_heading,
+.report-topic-heading,
 .item1 {
-  width: 800px;
+  width: 1120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -397,7 +320,7 @@ header nav li {
 }
 
 .items {
-  width: 800px;
+  width: 1120px;
   margin-top: 15px;
 }
 
@@ -416,142 +339,4 @@ header nav li {
   background-color: rgb(0, 177, 0);
   color: white;
   border-radius: 4px;
-}
-
-.container {
-  padding: 10%;
-}
-
-table {
-  width: 80%;
-  margin: 40px auto;
-}
-
-table.list {
-  text-align: center;
-  width: 100%;
-}
-
-td {
-  border: 1px solid rgba(0, 20, 151, 0.59);
-  text-align: center;
-  padding: 8px 15px;
-}
-
-tr:nth-child(even),
-table.list thead > tr {
-  background-color: rgba(0, 20, 151, 0.59);
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"] {
-  width: 91%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 4px;
-}
-
-input[type="submit"],
-input[type="reset"] {
-  padding: 6px 12px;
-  margin: 15px 0 10px;
-  display: inline-block;
-  border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  outline: none;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
-  background: #626262;
-}
-
-.dropdown-nav {
-  display: none;
-}
-
-#chat {
-  width: 250px;
-  height: 300px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  border-radius: 10px 0 0 0;
-  border: 1px solid #000;
-  background-color: #fff;
-  z-index: 999;
-}
-
-#chat .chat-header {
-  border-radius: 10px 0 0 0;
-  background-color: #819bea;
-  padding: 10px;
-}
-#chat .chat-content {
-  padding: 10px;
-  height: 210px;
-  background-color: #fff;
-}
-
-#chat .chat-input input {
-  width: 70%;
-  height: 45px;
-  padding: 5px;
-}
-
-#chat .chat-input button {
-  width: 28%;
-  height: 45px;
-}
-
-.dropbtn {
-  background-color: #3f0097;
-  color: white;
-  padding: 12px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.dropdown-content {
-  z-index: 2;
-  width: 100%;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #e0e0e0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.box:nth-child(4) {
-  background-color: var(--two-use-color);
 }

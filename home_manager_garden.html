@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>ResiComm Manager</title>
+	<link rel="stylesheet"
+		href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+		<div class="logosec">
+      <div class="logo">RESICOMM</div>
+		</div>
+		<div class="message">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./login.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+			<img src="./images/manager/dashboard/notification.png" class="icon" alt="">
+			<div class="dp">
+				<img src="./images/manager/dashboard/profile.png" class="dp_icon" alt="dp">
+			</div>
+		</div>
+	</header>
+
+	<div class="dropdown-nav">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-nav-content">
+			<a href="#">Dashboard</a>
+			<a href="#">Profile</a>
+			<a href="#">Settings</a>
+		</div>
+	</div>
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<div class="nav-option option5">
+							<div class="dropdown">
+								<button class="dropbtn">Resident</button>
+								<div class="dropdown-content">
+									<a href="resident_dashboard.html">Dashboard</a>
+									<!-- <a href="#">Home</a> -->
+								</div>
+							</div>
+					</div>
+
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Visitor</button>
+							<div class="dropdown-content">
+								<a href="visitor_dashboard.html">Dashboard</a>
+
+								<!-- <a href="#">Home</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Building Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_building.html">Dashboard</a>
+								<a href="home_manager_building.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Security Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_security.html">Dashboard</a>
+								<a href="home_manager_security.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Pool Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_pool.html">Dashboard</a>
+								<a href="home_manager_pool.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<a class="dropbtn text-center" href="user_profile.html">Profile</a>
+					</div>
+
+					<div class="nav-option option5">
+						<a href="login.html" class="dropbtn text-center">Logout</a>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="search_bar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="search_button">
+				<img src=
+						"images/manager/home/search.png"
+						class="icon search_icon"
+						alt="search-button">
+				</div>
+			</div>
+
+			
+			<div class="button-container">
+				<button class="button bt1">Manage Security Managers</button>
+                <button class="button bt2">Manage Pool Managers</button>
+                <button class="button bt3">Manage Garden Managers</button>
+                <button class="button bt4">Manage Resident and Visitors</button>
+                <button class="button bt5">Generate Reports</button>
+                <!-- <button class="button bt6">Manage Security Managers</button> -->
+			</div>
+
+            <table>
+                <tr>
+                    <td>
+                        <form>
+                            <div>
+                                <label>Employee Id </label>
+                                <input type="number">
+                            </div>
+
+                            <div>
+                                <label>Employee Name </label>
+                                <input type="text">
+                            </div>
+                            
+                            <div>
+                                <label for="empId">Employee Email </label>
+                                <input type="email">
+                            </div>
+
+                            <div>
+                                <label>Phone Number</label>
+                                <input type="tel">
+                            </div>
+
+                            <div class="form_action--button">
+                                <input type="submit" value="submit">
+                                <input type="reset" value="reset">
+                            </div>  
+                        </form>
+
+                        <td>
+                            <table class="list" id="storeList">
+                                <thead>
+                                    <tr>
+                                        <th>Employee Id</th>
+                                        <th>Employee Name</th>
+                                        <th>Employee Email</th>
+                                        <th>Phone Number</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>101</td>
+                                    <td>Garden Manager 1</td>
+                                    <td>asdf@gmail.com</td>
+                                    <td>63247901</td>
+                                    <td><button>Edit</button><button>Delete</button></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+    </div>
+	<div id="chat" class="chat">
+		<div class="chat-header">
+			Chatbot
+		</div>
+		<div class="chat-content">
+			Hey there
+		</div>
+		<div class="chat-input d-flex">
+			<input placeholder="Start chat..."./>
+			<button>Send</button>
+		</div>
+	</div>			
+				
+
+</body>
+</html>

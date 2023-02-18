@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>ResiComm Visitor</title>
+	<link rel="stylesheet"
+		href="style.css">
+	<link rel="stylesheet"
+		href="./css/visitor.css">
+	<link rel="stylesheet"
+		href="responsive.css">
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+		<div class="logosec">
+      <div class="logo">RESICOMM</div>
+		</div>
+		<div class="message">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./login.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+			<img src="images/manager/dashboard/notification.png" class="icon" alt="">
+			<div class="dp">
+				<img src="images/manager/dashboard/profile.png" class="dp_icon" alt="dp">
+			</div>
+		</div>
+	</header>
+
+	<div class="dropdown-nav">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-nav-content">
+			<a href="#">Dashboard</a>
+			<a href="#">Profile</a>
+			<a href="#">Settings</a>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+
+					<div class="nav-option option5">
+							<div class="dropdown">
+								<button class="dropbtn">Resident</button>
+								<div class="dropdown-content">
+									<a href="resident_dashboard.html">Dashboard</a>
+									<!-- <a href="#">Home</a> -->
+								</div>
+							</div>
+					</div>
+
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Visitor</button>
+							<div class="dropdown-content">
+								<a href="visitor_dashboard.html">Dashboard</a>
+
+								<!-- <a href="#">Home</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Pool Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_pool.html">Dashboard</a>
+								<a href="home_manager_pool.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Garden Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_garden.html">Dashboard</a>
+								<a href="home_manager_garden.html">Home</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Building Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_building.html">Dashboard</a>
+								<a href="home_manager_building.html">Home</a>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="nav-option option5">
+						<div class="dropdown">
+							<button class="dropbtn">Security Manager</button>
+							<div class="dropdown-content">
+								<a href="dashboard_manager_security.html">Dashboard</a>
+								<a href="home_manager_security.html">Home</a>
+							</div>
+						</div>
+					</div>
+				
+
+					<!-- <div class="nav-option option4">
+						<img src=
+							"images/manager/dashboard/home.png"
+							class="nav_image"
+							alt="institution">
+						<h3> Home</h3>
+					</div> -->
+
+					<div class="nav-option option5">
+						<a class="dropbtn text-center" href="user_profile.html">Profile</a>
+					</div>
+
+					<div class="nav-option option5">
+						<a href="login.html" class="dropbtn text-center">Logout</a>
+					</div>
+
+					<!-- <div class="nav-option option6">
+						<img src=
+							"images/manager/dashboard/settings.png"
+							class="nav_image"
+							alt="settings">
+						<h3> Settings</h3>
+					</div> -->
+
+					<!-- <div class="nav-option logout">
+						<img src=
+							"images/manager/dashboard/logout.png"
+							class="nav_image"
+							alt="logout">
+						<h3>Logout</h3>
+					</div> -->
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+
+			<div class="visitor-box-container">
+
+				<div class=" box1">
+					<div class="text">
+						<!-- <h2 class="topic-heading">$250,000.00</h2> -->
+						<div class="logo">Hi Visitor</div>
+							<!-- <h2 class="topic">Total Income</h2> -->
+					</div>
+
+				</div>
+			</div>
+
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Create a Visit Request</h1>
+				</div>
+
+				<div class="report-body">
+					<form>
+                        <div class="d-flex">
+                            <div class="d-inline">
+                            <label for="apartment_number">Apartment Number:</label>
+                        <input type="text" id="apartment_number" name="apartment_number">
+                        </div>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                       <div class="d-inline"> 
+                        <label for="building_number">Building Number:</label>
+                        <input type="building_number" id="building_number" name="building_number">
+                       </div>
+                       </div>
+                       <br>
+                        <label for="vehicle_radio">Will you be coming with a vehicle?:</label><br>
+                        <div class="d-flex">
+                        <input type="radio" id="vehicle_radio_no" name="vehicle_radio" value="no">
+                        &nbsp;
+                        <label for="male">No</label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" id="vehicle_radio_yes" name="vehicle_radio" value="yes">
+                        &nbsp;
+                        <label for="female">Yes</label><br>
+                        </div>                
+                        <br>
+                        <label for="vehicle_number">Select your vehicle:</label>
+                        <select id="vehicle_number" name="vehicle_number">
+                            <option value="">Select vehicle</option>
+                            <option value="number1">Hyundai Elantra / LHD-8488</option>
+                            <option value="number2">Nissan Turano / CBH-3536</option>
+                            <option value="number3">Ford Fusion / MBD-1254</option>
+                          </select><br>
+                        <p style="font-size:14px;">Vehicle not added?<a href="./visitor_register_vehicle.html">Add here!</a></p>
+                        <br>
+                        <div class="d-flex">
+                            <div class="d-inline">
+                                <label for="in-time">In-Time:</label>
+                        <input type="text" id="in-time" name="in-time">
+                            </div>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <div class="d-inline">
+                            <label for="out-time">Out-Time:</label>
+                        <input type="text" id="out-time" name="out-time">
+                        </div>
+                        </div>
+                       <br>
+                       <p><label for="visit-reason">Reason for visit:</label></p>
+  <textarea id="visit-reason" name="visit-reason" rows="6" cols="96"></textarea>
+  <br>
+  <br>
+                        <button type="submit" class="btn-primary" value="Submit">Submit</button>
+                      </form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="./index.js"></script> -->
+</body>
+</html>
